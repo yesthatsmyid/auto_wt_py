@@ -1,0 +1,15 @@
+#!/bin/python3
+
+
+# removing all the files in current directory with particular extension.
+
+import os
+
+for f in os.listdir():
+    # every file who ends with .sh extension will be deleted
+    if f.endswith('.sh'):
+        os.unlink(f)
+        print(f)
+
+
+
